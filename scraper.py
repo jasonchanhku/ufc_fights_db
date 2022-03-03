@@ -22,7 +22,7 @@ favourite = []
 
 def scrape_data():
     # set up page to extract table
-    data = requests.get("https://www.betmma.tips/mma_betting_favorites_vs_underdogs.php?Org=1")
+    data = requests.get("http://www.betmma.tips/mma_betting_favorites_vs_underdogs.php?Org=1")
     soup = BeautifulSoup(data.text, 'html.parser')
 
     # table with 98% width 
