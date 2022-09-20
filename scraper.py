@@ -103,7 +103,7 @@ def create_df():
     df["Favourite"] = favourite
     df["Label"] = label
     print(f"Successfully scraped {df.shape[0]} fights and last fight card was {df.iloc[-1, :]['Events']} {df.iloc[-1, :]['Location']}")
-    print(df["Label"].value_counts()/2265)
+    print(df["Label"].value_counts()/len(df))
     
     return df
 
